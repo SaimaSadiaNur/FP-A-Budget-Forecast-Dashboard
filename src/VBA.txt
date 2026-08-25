@@ -1,0 +1,30 @@
+Sub RefreshDashboard()
+
+    ' Refresh all data connections (Power Query, external links)
+    ThisWorkbook.RefreshAll
+
+    ' Refresh all PivotTables safely
+    Dim ws As Worksheet, pt As PivotTable
+    For Each ws In ThisWorkbook.Worksheets
+        If ws.PivotTables.Count > 0 Then
+            For Each pt In ws.PivotTables
+                On Error Resume Next
+                pt.RefreshTable
+                On Error GoTo 0
+            Next pt
+        End If
+    Next ws
+
+    ' Wait for refresh completion
+    Application.CalculateUntilAsyncQueriesDone
+
+    ' Recalculate workbook
+    Application.CalculateFull
+
+    ' Save workbook
+    ThisWorkbook.Save
+
+    ' Confirmation message
+    MsgBox "Dashboard refreshed and saved successfully!", vbInformation
+
+End Sub
