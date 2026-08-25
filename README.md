@@ -85,7 +85,9 @@ Users can filter the dashboard by:
 All dashboard components are connected to the underlying **Power Pivot Data Model**, allowing KPIs and visualizations to respond dynamically to user selections.
 # Project Structure
 <img width="1024" height="1536" alt="Copilot_20260825_222400" src="https://github.com/user-attachments/assets/1954aa01-f41c-4772-bfd1-43965540f540" />
+
 # Tech Stack
+
 - **Microsoft Excel** — Financial analysis, modeling, and dashboard development
 - **Power Query** — Data cleaning, transformation, and ETL
 - **Power Pivot** — Relational data modeling and star-schema architecture
@@ -93,7 +95,9 @@ All dashboard components are connected to the underlying **Power Pivot Data Mode
 - **Excel PivotTables & Charts** — Interactive financial visualization
 - **Excel Slicers** — Dynamic dashboard filtering
 - **Excel VBA / Macros** — Dashboard and refresh workflow automation
+- 
 # Automation
+
 The workbook uses VBA to automate the dashboard refresh workflow.
 The macro:
 1. Refreshes the workbook's data connections and queries.
@@ -103,10 +107,13 @@ The macro:
 5. Shows a success message upon  completion
 The VBA implementation is documented in:
 `src/VBA.txt`
+
 # Dashboard Preview
 The dashboard provides a management-level view of:
 <img width="916" height="359" alt="dashboard_preview" src="https://github.com/user-attachments/assets/0dd2ceaa-d671-4e85-bf2d-94ddc6b90246" />
+
 # How to Use
+
 1. 👉 **Download** the Excel workbook from the `workbook/` folder.
 2. 👉 **Open** the workbook in Microsoft Excel.
 3. 👉 Ensure **Power Query** and **Power Pivot** are available.
@@ -116,11 +123,13 @@ The dashboard provides a management-level view of:
    - **Fiscal Quarter**
    - **Expense Category**
 The workbook uses **VBA** to automate the refresh workflow, while **Power Query** and **Power Pivot** handle data transformation, modeling, and updates.
+
 # Project Objective
 This project was developed as a practical demonstration of an FP&A reporting workflow in Excel, with an emphasis on moving beyond basic spreadsheet reporting toward a structured analytical model.
 The objective was to combine:
 Data preparation → Financial modeling → Variance analysis → Forecast analysis → Interactive reporting
 within a single Excel-based solution.
+
 # Roadmap
 Potential future enhancements include:
 1. Add automated report export to PDF
