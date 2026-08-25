@@ -44,9 +44,7 @@ The core fields used in the analytical model include:
 Raw data is kept separate from the analytical model so that transformations can be reproduced through Power Query rather than manually modifying the source data.
 
 # Data Transformation & Modeling
-
 The project follows a layered approach:
-
 ┌─────────────────────┐
 │     Raw Financial   │
 │        Dataset      │
@@ -74,12 +72,12 @@ The project follows a layered approach:
 ┌─────────────────────────────┐
 │     Executive Dashboard     │
 │ KPIs + Charts + Slicers     │
-└─────────────────────────────┘
+└──────────┬──────────────────┘
            │
            ▼
 ┌─────────────────────────────┐
-│       VBA Macros
-│   Refresh + Recalculation
+│       VBA Macros            │
+│   Refresh + Recalculation   │
 └─────────────────────────────┘
 # Data Model
 The model uses a star-schema structure consisting of:
