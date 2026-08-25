@@ -64,37 +64,35 @@ DAX measures used in the project are documented in:
 src/DAX.txt
 # Dashboard
 The final dashboard focuses on the financial metrics most relevant to management rather than displaying a large number of basic statistics.
-👉 KPI Cards
+### 👉 KPI Cards
 The dashboard includes:
-1. Total Budget
-2. Forecast Accuracy %
-3. Total Revenue
-4. Actual Expense
-5. Expense Variance %
-6. Revenue Variance %
-👉 Visual Analysis
+1. **Total Budget**
+2. **Forecast Accuracy %**
+3. **Actual Revenue**
+4. **Actual Expense**
+5. **Expense Variance %**
+6. **Revenue Variance %**
+### 👉 Visual Analysis
 The dashboard includes:
-1. Budget vs Actual Expense by Department
-2. Revenue Forecast vs Actual by Fiscal Quarter
-3. Expense Variance by Department
-👉 Interactive Filters
+1. **Budget vs Actual Expense by Department**
+2. **Revenue Forecast vs Actual by Fiscal Quarter**
+3. **Expense Variance by Department**
+### 👉 Interactive Filters
 Users can filter the dashboard by:
-1. Fiscal Quarter
-2. Department
-3. Expense Category
-All dashboard components are connected to the underlying Power Pivot data model, allowing the KPIs and visualizations to respond dynamically to selections.
+1. **Fiscal Quarter**
+2. **Department**
+3. **Expense Category**
+All dashboard components are connected to the underlying **Power Pivot Data Model**, allowing KPIs and visualizations to respond dynamically to user selections.
 # Project Structure
 <img width="1024" height="1536" alt="Copilot_20260825_222400" src="https://github.com/user-attachments/assets/1954aa01-f41c-4772-bfd1-43965540f540" />
-
-
 # Tech Stack
-Microsoft Excel — financial analysis and dashboard
-Power Query — data cleaning, transformation, and ETL
-Power Pivot — relational data model and star-schema architecture
-DAX — analytical measures and financial KPIs
-Excel PivotTables & Charts — interactive visualization
-Excel Slicers — dashboard filtering
-Excel Macros - dashboard automation
+- **Microsoft Excel** — Financial analysis, modeling, and dashboard development
+- **Power Query** — Data cleaning, transformation, and ETL
+- **Power Pivot** — Relational data modeling and star-schema architecture
+- **DAX** — Analytical measures and financial KPIs
+- **Excel PivotTables & Charts** — Interactive financial visualization
+- **Excel Slicers** — Dynamic dashboard filtering
+- **Excel VBA / Macros** — Dashboard and refresh workflow automation
 # Automation
 The workbook uses VBA to automate the dashboard refresh workflow.
 The macro:
@@ -109,15 +107,15 @@ The VBA implementation is documented in:
 The dashboard provides a management-level view of:
 <img width="916" height="359" alt="dashboard_preview" src="https://github.com/user-attachments/assets/0dd2ceaa-d671-4e85-bf2d-94ddc6b90246" />
 # How to Use
-👉Download the Excel workbook from the workbook/ folder.
-👉Open the workbook in Microsoft Excel.
-👉Ensure Power Query and Power Pivot are available.
-👉Refresh the queries/model when new source data is available.
-👉Use the dashboard slicers to analyze performance by:
-   1. Department
-   2. Fiscal Quarter
-   3. Expense Category
-The workbook uses VBA to automate the refresh workflow, while Power Query and Power Pivot handle data transformation and model updates.
+1. 👉 **Download** the Excel workbook from the `workbook/` folder.
+2. 👉 **Open** the workbook in Microsoft Excel.
+3. 👉 Ensure **Power Query** and **Power Pivot** are available.
+4. 👉 **Refresh** the queries and Data Model when new source data is available.
+5. 👉 Use the dashboard slicers to analyze financial performance by:
+   - **Department**
+   - **Fiscal Quarter**
+   - **Expense Category**
+The workbook uses **VBA** to automate the refresh workflow, while **Power Query** and **Power Pivot** handle data transformation, modeling, and updates.
 # Project Objective
 This project was developed as a practical demonstration of an FP&A reporting workflow in Excel, with an emphasis on moving beyond basic spreadsheet reporting toward a structured analytical model.
 The objective was to combine:
