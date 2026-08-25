@@ -45,40 +45,14 @@ Raw data is kept separate from the analytical model so that transformations can 
 
 # Data Transformation & Modeling
 The project follows a layered approach:
-┌─────────────────────┐
-│     Raw Financial   │
-│        Dataset      │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│    Power Query      │
-│ Clean + Transform   │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────────────┐
-│       Power Pivot           │
-│     Star Schema Model       │
-└──────────┬──────────────────┘
-           │
-           ▼
-┌─────────────────────────────┐
-│       DAX Measures          │
-│ Budget | Expense | Revenue  │
-└──────────┬──────────────────┘
-           │
-           ▼
-┌─────────────────────────────┐
-│     Executive Dashboard     │
-│ KPIs + Charts + Slicers     │
-└──────────┬──────────────────┘
-           │
-           ▼
-┌─────────────────────────────┐
-│       VBA Macros            │
-│   Refresh + Recalculation   │
-└─────────────────────────────┘
+```mermaid
+flowchart TD
+    A[Raw Financial Dataset] --> B[Power Query<br/>Clean + Transform]
+    B --> C[Power Pivot<br/>Star Schema Model]
+    C --> D[DAX Measures<br/>Budget | Expense | Revenue]
+    D --> E[Executive Dashboard<br/>KPIs + Charts + Slicers]
+    E --> F[VBA Macros<br/>Refresh + Recalculation]
+
 # Data Model
 The model uses a star-schema structure consisting of:
 1. FactFinancial — financial transactions and numeric measures
